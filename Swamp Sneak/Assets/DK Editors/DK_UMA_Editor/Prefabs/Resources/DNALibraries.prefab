@@ -1,0 +1,376 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: DNALibraries
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.768222, y: 1.2258792, z: 4.256524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc6d6b6b418a7b418226f6a803b7cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConverterList:
+  - Name: Height
+    ValueMini: 0.3
+    ValueMaxi: 0.5
+    Part: 
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: HeadSize
+    ValueMini: 0.485
+    ValueMaxi: 0.515
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: HeadWidth
+    ValueMini: 0.4
+    ValueMaxi: 0.6
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: NeckTickness
+    ValueMini: 0.495
+    ValueMaxi: 0.51
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: HandsSize
+    ValueMini: 0.485
+    ValueMaxi: 0.515
+    Part: Arms
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: FeetSize
+    ValueMini: 0.485
+    ValueMaxi: 0.515
+    Part: Legs
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: LegsSeparation
+    ValueMini: 0.4
+    ValueMaxi: 0.6
+    Part: Legs
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: Waist
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: ArmLength
+    ValueMini: 0.485
+    ValueMaxi: 0.515
+    Part: Arms
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: ArmWidth
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Arms
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: forearmWidth
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Arms
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: ForearmLength
+    ValueMini: 0.485
+    ValueMaxi: 0.515
+    Part: Arms
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: UpperMuscle
+    ValueMini: 0
+    ValueMaxi: 1
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: UpperWeight
+    ValueMini: -0.2
+    ValueMaxi: 0.2
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: LowerMuscle
+    ValueMini: -0.2
+    ValueMaxi: 0.2
+    Part: Legs
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: LowerWeight
+    ValueMini: -0.1
+    ValueMaxi: 0.1
+    Part: Legs
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: Belly
+    ValueMini: -0.2
+    ValueMaxi: 0.2
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: UpperWeight
+  - Name: LegsSize
+    ValueMini: 0.4
+    ValueMaxi: 0.6
+    Part: Legs
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: GluteusSize
+    ValueMini: 0.4
+    ValueMaxi: 0.6
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: EarsSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: EarsPosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: EarsRotation
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: NoseSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NoseCurve
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NoseWidth
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NoseInclination
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NosePosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NosePronounced
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: NoseFlatten
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Nose
+    Type: 
+    LinkedTo: 
+  - Name: ChinSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Chin
+    Type: 
+    LinkedTo: 
+  - Name: ChinPronounced
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Chin
+    Type: 
+    LinkedTo: 
+  - Name: ChinPosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Chin
+    Type: 
+    LinkedTo: 
+  - Name: MandibleSize
+    ValueMini: 0.45
+    ValueMaxi: 0.52
+    Part: Face
+    Part2: Mouth
+    Type: 
+    LinkedTo: 
+  - Name: JawsSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Mouth
+    Type: 
+    LinkedTo: 
+  - Name: JawsPosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Mouth
+    Type: 
+    LinkedTo: 
+  - Name: CheekSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Cheeks
+    Type: 
+    LinkedTo: 
+  - Name: CheekPosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Cheeks
+    Type: 
+    LinkedTo: 
+  - Name: LowCheekPronounced
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Cheeks
+    Type: 
+    LinkedTo: 
+  - Name: LowCheekPosition
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Cheeks
+    Type: 
+    LinkedTo: 
+  - Name: ForeheadSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: ForeheadPosition
+    ValueMini: 0.15
+    ValueMaxi: 0.65
+    Part: Head
+    Part2: 
+    Type: 
+    LinkedTo: 
+  - Name: LipsSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Mouth
+    Type: 
+    LinkedTo: 
+  - Name: MouthSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Mouth
+    Type: 
+    LinkedTo: 
+  - Name: EyesRotation
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Eyes
+    Type: 
+    LinkedTo: 
+  - Name: EyesSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Face
+    Part2: Eyes
+    Type: 
+    LinkedTo: 
+  - Name: BreastSize
+    ValueMini: 0.3
+    ValueMaxi: 0.8
+    Part: Torso
+    Part2: 
+    Type: 
+    LinkedTo: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

@@ -1,0 +1,623 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7c53ade415f8c4da0335c7070bc783, type: 3}
+  m_Name: Blank Object
+  m_EditorClassIdentifier: 
+  Name: 
+  Gender: 46656d616c65
+  Race: 
+  RaceData: {fileID: 0}
+  Weight: 
+  IsPlayer: 1
+  _UMA_Avatar: {fileID: 0}
+  _Avatar:
+    HeadIndex: 0
+    TorsoIndex: 0
+    SkinColor:
+      r: 0
+      g: 0
+      b: 0
+      a: 0
+    HairColor:
+      r: 0
+      g: 0
+      b: 0
+      a: 0
+    EyeColor:
+      r: 0
+      g: 0
+      b: 0
+      a: 0
+    _Face:
+      _Head:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _FaceHair:
+        EyeBrows: {fileID: 0}
+        EyeBrowsColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        _BeardOverlayOnly:
+          Beard1: {fileID: 0}
+          Beard1Color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+          Beard2: {fileID: 0}
+          Beard2Color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+          Beard3: {fileID: 0}
+          Beard3Color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+        _BeardSlotOnly:
+          Slot: {fileID: 0}
+          Overlay: {fileID: 0}
+          Color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+      _Eyes:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Adjust: {fileID: 0}
+        AdjustColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _EyeLash:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _EyeLids:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Ears:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Nose:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Mouth:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Lips: {fileID: 0}
+        LipsColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        _InnerMouth:
+          Slot: {fileID: 0}
+          Overlay: {fileID: 0}
+          color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+    _Hair:
+      _OverlayOnly:
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _SlotOnly:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        _HairModule:
+          Slot: {fileID: 0}
+          Overlay: {fileID: 0}
+          Color:
+            r: 0
+            g: 0
+            b: 0
+            a: 0
+    _Body:
+      _Torso:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Hands:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Legs:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Feet:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Tattoo: {fileID: 0}
+        TattooColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Makeup: {fileID: 0}
+        MakeupColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+        OptionalColor:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+      _Underwear:
+        Slot: {fileID: 0}
+        Overlay: {fileID: 0}
+        Color:
+          r: 0
+          g: 0
+          b: 0
+          a: 0
+        Optional: {fileID: 0}
+  _Equipment:
+    _Head:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Shoulder:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Torso:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Hands:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Legs:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Feet:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _ArmBand:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Wrist:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _LegBand:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Collar:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _RingLeft:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _RingRight:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Belt:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Cloak:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _Backpack:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _LeftHand:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+    _RightHand:
+      Slot: {fileID: 0}
+      Overlay: {fileID: 0}
+      Color:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      Optional: {fileID: 0}
+      OptionalColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+  TmpTorsoOverLayList: []
