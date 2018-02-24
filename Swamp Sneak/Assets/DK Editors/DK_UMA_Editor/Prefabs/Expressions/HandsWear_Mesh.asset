@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e65ae061c870d8498a2a89c9a330071, type: 3}
+  m_Name: HandsWear_Mesh
+  m_EditorClassIdentifier: 
+  Name: HandsWear_Mesh
+  Place: {fileID: 100000, guid: cbfe1139a5ca5824db73eadfdfd2db43, type: 2}
+  OverlayType: HandsWear
+  Elem: 0
+  Replace: 0
+  HideMouth: 0
+  HideEars: 0
+  HideBeard: 0
+  HideHair: 0
+  HideHairModule: 0
+  WearWeight: Light
+  Selected: 0
+  dnaConverterList: []
+  ElemAlreadyIn: 0

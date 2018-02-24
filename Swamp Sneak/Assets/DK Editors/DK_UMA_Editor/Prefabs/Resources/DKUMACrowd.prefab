@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: DKUMACrowd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466714eff1a79749a901215d5b1ad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatorController: {fileID: 0}
+  _FaceOverlay: {fileID: 0}
+  _DK_Model: {fileID: 0}
+  ToDelete: {fileID: 0}
+  ActivePresetLib: {fileID: 0}
+  Anato_DK_Race: {fileID: 0}
+  Race_DK_Race: {fileID: 0}
+  Slot_DK_Race: {fileID: 0}
+  Ov_DK_Race: {fileID: 0}
+  CurrentSlot: {fileID: 0}
+  CurrentMeshSlot: {fileID: 0}
+  FleshOverlay: {fileID: 0}
+  umaDna:
+    N0: 0.5
+    N1: 0.5
+    N2: 0.5
+    N3: 0.5
+    N4: 0.5
+    N5: 0.5
+    N6: 0.5
+    N7: 0.5
+    N8: 0.5
+    N9: 0.5
+    N10: 0.5
+    N11: 0.5
+    N12: 0.5
+    N13: 0.5
+    N14: 0.5
+    N15: 0.5
+    N16: 0.5
+    N17: 0.5
+    N18: 0.5
+    N19: 0.5
+    N20: 0.5
+    N21: 0.5
+    N22: 0.5
+    N23: 0.5
+    N24: 0.5
+    N25: 0.5
+    N26: 0.5
+    N27: 0.5
+    N28: 0.5
+    N29: 0.5
+    N30: 0.5
+    N31: 0.5
+    N32: 0.5
+    N33: 1
+    N34: 1
+    N35: 1
+    N36: 0.5
+    N37: 0.5
+    N38: 0.5
+    N39: 0.5
+    N40: 0.5
+    N41: 0.5
+    N42: 0.5
+    N43: 0.5
+    N44: 0.5
+    N45: 0.5
+    N46: 0.5
+    N47: 0.5
+    N48: 0.5
+    N49: 0.5
+    N50: 0.5
+    N51: 0.5
+    N52: 0.5
+    N53: 0.5
+    N54: 0.5
+    N55: 0.5
+    N56: 0.5
+    N57: 0.5
+    N58: 0.5
+    N59: 0.5
+    N60: 0.5
+    N61: 0.5
+    N62: 0.5
+    N63: 0.5
+    N64: 0.5
+    N65: 0.5
+    N66: 0.5
+    N67: 0.5
+    N68: 0.5
+    N69: 0.5
+    N70: 0.5
+  _DK_Race: {fileID: 0}
+  umaData: {fileID: 0}
+  slotLibrary: {fileID: 0}
+  overlayLibrary: {fileID: 0}
+  raceLibrary: {fileID: 0}
+  UslotLibrary: {fileID: 0}
+  UoverlayLibrary: {fileID: 0}
+  UpdateProcess: 1
+  Default:
+    ResearchDefault:
+      _DKSlotData: {fileID: 11400000, guid: 5054156f72f015d4da040e993c0bebff, type: 2}
+      _SlotData: {fileID: 11400000, guid: 13118e7053de9c64ba54543cbe97b6a8, type: 2}
+      _DKOverlayData: {fileID: 11400000, guid: 22578c088839e264eb92f3dd4007971a, type: 2}
+      _OverlayData: {fileID: 11400000, guid: 647995b5aeb8ffe45b9d223e5dc26cf7, type: 2}
+      DK_ExpressionData: {fileID: 11400000, guid: 04e4dbd2f8cf59b41b3e835550ddcd06,
+        type: 2}
+    Race:
+      MaleRacePrefab: {fileID: 100000, guid: 51951e653a5fb5a46ac725cb24bbb120, type: 2}
+      FemaleRacePrefab: {fileID: 100318, guid: 065f1a0ee75030440ab3639a96e9606a, type: 2}
+      MaleTPose: {fileID: 0}
+      FemaleTPose: {fileID: 0}
+      DnaConverterBehaviour: {fileID: 11400000, guid: 87c316a2a8781bc419c34d77feda92d1,
+        type: 2}
+  generateUMA: 0
+  NewProcess: 0
+  generateLotsUMA: 0
+  UMAGenerated: 1
+  AvatarMaxi: 1
+  AvatarCurrent: 0
+  UseLinkedSlots: 0
+  UseLinkedOv: 1
+  UseNaturalBehaviour: 1
+  ToUMA: 1
+  tempUMA: {fileID: 0}
+  umaCrowdSize: {x: 10, y: 4}
+  zeroPoint: {fileID: 0}
+  atlasResolutionScale: 1
+  Spacing: {x: 1, y: 1}
+  SpawnFrequency: 0.005
+  umaTimerEnd: 1116.2107
+  RaceAndGender:
+    Gender: Female
+    GenderType: Random
+    MultiRace: One Race
+    Race: HumanOccidental
+    SingleORMulti: 1
+    RaceDone: 0
+    RaceToCreate: {fileID: 0}
+  Randomize:
+    randomResult: 0
+    RanShape: 1
+    RanElements: 1
+    PiloAmount: 0
+    PiloMaxi: 0
+    HairDone: 1
+    Pilosity: Random
+    Hair: Random
+    Height: Random
+    _Height: Medium
+    Weight: Random
+    _Weight: Low
+    Muscles: Random
+    _Muscles: Low
+    Tatoo: 1
+    TatooChance: 50
+    Lips: 1
+    LipsChance: 80
+    Makeup: 1
+    MakeupChance: 50
+  HeadIndex: 0
+  TorsoIndex: 0
+  WearMeshIndex: 0
+  FaceSlot: 0
+  HairOverlay: {fileID: 0}
+  HairOverlayIndex: 0
+  CurrentSlotIndex: 0
+  tempSlotList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Wears:
+    RanWearYes: 29
+    RanWearYesMax: 100
+    RanWearChoice: 1
+    RanWearAct: 1
+    RanUnderwearChoice: 1
+    RanActivatewear: 54
+    RanActivateMesh: 0
+    WearOverlays: 1
+    WearMeshes: 1
+    HideShoulders: 0
+    Shoulders: {fileID: 0}
+    HideLegs: 0
+    Legs: {fileID: 0}
+    HideBelt: 0
+    Belt: {fileID: 0}
+    HideArmBand: 0
+    ArmBand: {fileID: 0}
+    HideWrist: 0
+    Wrist: {fileID: 0}
+    HideLegBand: 0
+    LegBand: {fileID: 0}
+    HideCollar: 0
+    Collar: {fileID: 0}
+    HideRingLeft: 0
+    RingLeft: {fileID: 0}
+    HideRingRight: 0
+    RingRight: {fileID: 0}
+    HideBackpack: 0
+    Backpack: {fileID: 0}
+    HideCloak: 0
+    Cloak: {fileID: 0}
+    HideUnderwear: 0
+    WearWeightList:
+    - Name: Head Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+    - Name: Torso Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+    - Name: Hands Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+    - Name: Legs Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+    - Name: Feet Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+    - Name: Shoulder Weight
+      Weights:
+      - Light
+      - Medium
+      - High
+      - Heavy
+  AssignedSlotsList: []
+  AssignedOverlayList: []
+  MediumDNA: 0
+  Colors:
+    UsePresets: 1
+    UseOverlayPresets: 0
+    RanColors: 0
+    AdjRanMaxi: 0.29611406
+    WearAdjRanMaxi: 0.11185546
+    HairAdjRanMaxi: 0.12736621
+    ColorToApply: {r: 0.28507125, g: 0.7356646, b: 0.45399863, a: 3}
+    InnerMouthColor: {r: 0.48012617, g: 0.4852941, b: 0.431769, a: 1}
+    InnerMouthColorPreset: {fileID: 0}
+    RanSkin: 0
+    skinColor: {r: 0.6276493, g: 0.52016664, b: 0.57585406, a: 1}
+    skinColorPreset: {fileID: 0}
+    skinTone: 0.2929448
+    skinTone1: 0.35423407
+    skinTone2: 0.2750058
+    skinTone3: 0.39229587
+    RanEyes: 0
+    EyesColor: {r: 0.26489466, g: 0.25382054, b: 0.39979804, a: 1}
+    EyesColorPreset: {fileID: 0}
+    EyeOverlayAdjustColor: {r: 0.33415797, g: 0.73652655, b: 0.29834098, a: 1}
+    EyeOverlayAdjustColor1: 0.33415797
+    EyeOverlayAdjustColor2: 0.73652655
+    EyeOverlayAdjustColor3: 0.29834098
+    RanHair: 0
+    HairColor: {r: 0.2784314, g: 0.21213342, b: 0.14085352, a: 0}
+    HairColorPreset: {fileID: 0}
+    HairColor1: 0.34056094
+    HairColor2: 0.148953
+    RanWear: 1
+    TorsoWearColor: {r: 0.22661635, g: 0.67720973, b: 0.39554372, a: 2}
+    TorsoWearColor1: 0.19368574
+    TorsoWearColor2: 0.6442791
+    TorsoWearColor3: 0.3626131
+    LegsWearColor: {r: 0.84925073, g: 0.5875, b: 0.3943031, a: 1}
+    LegsWearColor1: 0.84925073
+    LegsWearColor2: 0.5875
+    LegsWearColor3: 0.3943031
+    FeetWearColor: {r: 0.77101755, g: 0.37567535, b: 0.360805, a: 1}
+    FeetWearColor1: 0.77101755
+    FeetWearColor2: 0.37567535
+    FeetWearColor3: 0.360805
+    HandWearColor: {r: 0.76609236, g: 0.3560916, b: 0.6457831, a: 1}
+    HandWearColor1: 0.76609236
+    HandWearColor2: 0.3560916
+    HandWearColor3: 0.6457831
+    HeadWearColor: {r: 0.47426978, g: 0.08920192, b: 0.029461343, a: 1}
+    HeadWearColor1: 0.47426978
+    HeadWearColor2: 0.08920192
+    HeadWearColor3: 0.029461343
+    BeltWearColor: {r: 0.13853477, g: 0.26547742, b: 0.7683114, a: 1}
+    BeltWearColor1: 0.13853477
+    BeltWearColor2: 0.26547742
+    BeltWearColor3: 0.7683114
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
