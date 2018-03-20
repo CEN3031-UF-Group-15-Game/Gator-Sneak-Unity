@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -27,7 +28,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		float m_CapsuleHeight;
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
-		bool m_Crouching;
+		bool m_Crouching = false;
+        public Text stealthText;
 
 
 		void Start()
@@ -40,6 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
+            stealthText.text = "Stealth: " + m_Crouching.ToString();
 		}
 
 
@@ -84,21 +87,24 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Capsule.height = m_Capsule.height / 2f;
 				m_Capsule.center = m_Capsule.center / 2f;
 				m_Crouching = true;
-			}
-			else
+                stealthText.text = "Stealth: " + m_Crouching.ToString();
+            }
+            else
 			{
 				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
 				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-					return;
+                    stealthText.text = "Stealth: " + m_Crouching.ToString();
+                    return;
 				}
 				m_Capsule.height = m_CapsuleHeight;
 				m_Capsule.center = m_CapsuleCenter;
 				m_Crouching = false;
-			}
-		}
+                stealthText.text = "Stealth: " + m_Crouching.ToString();
+            }
+        }
 
 		void PreventStandingInLowHeadroom()
 		{
@@ -110,8 +116,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-				}
-			}
+                    stealthText.text = "Stealth: " + m_Crouching.ToString();
+                }
+            }
 		}
 
 
