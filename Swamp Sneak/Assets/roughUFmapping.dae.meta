@@ -311,8 +311,69 @@ ModelImporter:
     4300106: ID275
     4300108: ID281
     4300110: ID289
+    6400000: ID105
+    6400002: ID125
+    6400004: ID13
+    6400006: ID131
+    6400008: ID137
+    6400010: ID143
+    6400012: ID149
+    6400014: ID155
+    6400016: ID161
+    6400018: ID169
+    6400020: ID177
+    6400022: ID183
+    6400024: ID189
+    6400026: ID19
+    6400028: ID197
+    6400030: ID205
+    6400032: ID211
+    6400034: ID219
+    6400036: ID227
+    6400038: ID233
+    6400040: ID239
+    6400042: ID245
+    6400044: ID251
+    6400046: ID257
+    6400048: ID263
+    6400050: ID269
+    6400052: ID27
+    6400054: ID275
+    6400056: ID281
+    6400058: ID289
+    6400060: ID303
+    6400062: ID309
+    6400064: ID315
+    6400066: ID321
+    6400068: ID327
+    6400070: ID333
+    6400072: ID339
+    6400074: ID345
+    6400076: ID35
+    6400078: ID351
+    6400080: ID357
+    6400082: ID363
+    6400084: ID369
+    6400086: ID41
+    6400088: ID47
+    6400090: ID55
+    6400092: ID61
+    6400094: ID67
+    6400096: ID75
+    6400098: ID81
+    6400100: ID87
+    6400102: ID93
+    6400104: ID99
+    6400106: Josh 1
+    6400108: Simple_Template_-_Feet_and_Inches
+    6400110: Stacy
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: 79d26a4879300ae4baa3d5420ed1a037, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -344,7 +405,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
