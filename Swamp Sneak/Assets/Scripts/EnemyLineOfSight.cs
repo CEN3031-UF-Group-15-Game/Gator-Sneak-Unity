@@ -20,7 +20,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 		}
 	}
 
-	void Update() {
+	void FixedUpdate() {
 		if(PlayerIsSeenByEnemy()) {
 			Debug.Log ("Seen!");
 		}
