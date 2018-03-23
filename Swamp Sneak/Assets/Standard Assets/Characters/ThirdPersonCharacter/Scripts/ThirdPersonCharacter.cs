@@ -42,7 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
-            stealthText.text = "Stealth: " + m_Crouching.ToString();
+            UpdateStatus("Stealth: " + m_Crouching.ToString());
 		}
 
 
@@ -87,7 +87,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Capsule.height = m_Capsule.height / 2f;
 				m_Capsule.center = m_Capsule.center / 2f;
 				m_Crouching = true;
-                stealthText.text = "Stealth: " + m_Crouching.ToString();
+                UpdateStatus("Stealth: " + m_Crouching.ToString());
             }
             else
 			{
@@ -96,13 +96,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-                    stealthText.text = "Stealth: " + m_Crouching.ToString();
+                    UpdateStatus("Stealth: " + m_Crouching.ToString());
                     return;
 				}
 				m_Capsule.height = m_CapsuleHeight;
 				m_Capsule.center = m_CapsuleCenter;
 				m_Crouching = false;
-                stealthText.text = "Stealth: " + m_Crouching.ToString();
+                UpdateStatus("Stealth: " + m_Crouching.ToString());
             }
         }
 
@@ -116,7 +116,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-                    stealthText.text = "Stealth: " + m_Crouching.ToString();
+                    UpdateStatus("Stealth: " + m_Crouching.ToString());
                 }
             }
 		}
@@ -226,6 +226,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_IsGrounded = false;
 				m_GroundNormal = Vector3.up;
 				m_Animator.applyRootMotion = false;
+			}
+		}
+
+		private void UpdateStatus(string message)
+		{
+			Debug.Log(message);
+			if (stealthText != null)
+			{
+				stealthText.text = message;
 			}
 		}
 	}
