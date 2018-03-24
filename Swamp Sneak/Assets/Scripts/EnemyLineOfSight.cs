@@ -7,6 +7,13 @@ public class EnemyLineOfSight : MonoBehaviour {
 	public Transform playerTransform;
 	public float degreeOfSight;
 	public float sightDistance;
+	private MoveToPlayer moveToPlayerComponent; 	// Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
+													// access the variable bool playerIsSeen. I update it here so we don't need to perform the 
+													// line of sight calculations more than necessary.
+
+	void Start() {
+		moveToPlayerComponent = GetComponent<MoveToPlayer> ();
+	}
 
 	bool PlayerIsSeenByEnemy() {
 		
@@ -40,9 +47,11 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 	void FixedUpdate() {
 		if(PlayerIsSeenByEnemy()) {
+			moveToPlayerComponent.playerIsSeen = true;	
 			Debug.Log ("Seen!");
 		}
 		else {
+			moveToPlayerComponent.playerIsSeen = false;
 			Debug.Log ("Not seen.");
 		}
 
