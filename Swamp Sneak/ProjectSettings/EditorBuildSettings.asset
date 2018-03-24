@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/start.unity
+    guid: c157b948260515b4fb079e4ca9067fbd
+  - enabled: 1
+    path: Assets/dylandev.unity
+    guid: 0396e14d59b9af641bb370cf91af9c56
+  - enabled: 1
+    path: Assets/highscore.unity
+    guid: 3d3e5b0235bb68e4eaccb9de8e20012d
