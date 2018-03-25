@@ -28,7 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		float m_CapsuleHeight;
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
-		bool m_Crouching = false;
+		public bool m_Crouching = false;
         public Text stealthText;
 
 
