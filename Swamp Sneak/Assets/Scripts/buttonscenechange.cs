@@ -14,6 +14,6 @@ public class buttonscenechange : MonoBehaviour {
 	}
 	public void Level1GameChange()
 	{
-		Application.LoadLevel("dylandev");
+		Application.LoadLevel("Scenes/DEMO SCENE");
 	}
 }
