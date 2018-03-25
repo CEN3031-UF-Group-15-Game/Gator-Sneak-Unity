@@ -30,13 +30,13 @@ public class EnemyLineOfSight : MonoBehaviour {
 				Vector3 vecNegative = angleNegative * transform.forward;
 
 				if(Physics.Raycast(transform.position, vecPositive, out hitPositive, sightDistance)) {
-					if(hitPositive.collider.gameObject.name == "ThirdPersonController") {
+					if(hitPositive.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
 						return true;
 					}
 				}
 
 				if(Physics.Raycast(transform.position, vecNegative, out hitNegative, sightDistance)) {
-					if(hitNegative.collider.gameObject.name == "ThirdPersonController") {
+					if(hitNegative.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
 						return true;
 					}
 				}
