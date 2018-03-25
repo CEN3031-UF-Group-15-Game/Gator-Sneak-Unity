@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyLineOfSight : MonoBehaviour {
 
-	public Transform playerTransform;
+	private Transform playerTransform;
 	public float degreeOfSight;
 	public float sightDistance;
 	private MoveToPlayer moveToPlayerComponent; 	// Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
@@ -12,6 +12,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 													// line of sight calculations more than necessary.
 
 	void Start() {
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		moveToPlayerComponent = GetComponent<MoveToPlayer> ();
 	}
 
