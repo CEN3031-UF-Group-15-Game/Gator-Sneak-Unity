@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 236432121}
   - component: {fileID: 236432120}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: button_LOAD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 461898102}
   - component: {fileID: 461898101}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: button_HIGHSCORE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 634317438}
   - component: {fileID: 634317437}
   m_Layer: 5
-  m_Name: START
+  m_Name: button_START
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,6 +711,46 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634317435}
+--- !u!1 &662990947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 662990949}
+  - component: {fileID: 662990948}
+  m_Layer: 0
+  m_Name: GameControl
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &662990948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662990947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ccf9efce8fece04ab23fc81c2257954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &662990949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662990947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 171, y: 17, z: -63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &663289893
 Prefab:
   m_ObjectHideFlags: 0
@@ -1210,7 +1250,7 @@ GameObject:
   - component: {fileID: 1275454536}
   - component: {fileID: 1275454535}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: button_CREDITS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1395,7 +1435,7 @@ GameObject:
   - component: {fileID: 1464120075}
   - component: {fileID: 1464120074}
   m_Layer: 5
-  m_Name: Button
+  m_Name: button_SETTINGS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,7 +1826,7 @@ GameObject:
   - component: {fileID: 2037378953}
   - component: {fileID: 2037378952}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: button_CONTINUE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
