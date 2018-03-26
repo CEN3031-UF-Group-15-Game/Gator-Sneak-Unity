@@ -1,10 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public abstract class Enemy : Person {
 
-public abstract class Enemy : Person {
-	
-    protected override void Init() {
-        
+    //Variable declarations that shared across all Enemy SubClasses
+        //These variables were made public and given default values so they could be seen in the editor
+    public int degreeOfSight; 
+    public int sightDistance;
+    protected EnemyLineOfSight enemy_los;
+
+    protected override void Init()
+    {
+        base.Init();
+
+        enemy_los = gameObject.GetComponentInChildren<EnemyLineOfSight>();
     }
 }
