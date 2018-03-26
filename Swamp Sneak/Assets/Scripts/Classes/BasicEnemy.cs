@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicEnemy : Enemy {
+	public int degreeOfSight = 50;
+	public int sightDistance = 5;
+
+	private EnemyLineOfSight elos;
 	
 	protected override void Init() {
 		base.Init();
 
-        degreeOfSight = 50;
-        sightDistance = 5;
-        this_NavAgent.speed = 3;
-
-        enemy_los.SetDegreeOfSight(degreeOfSight);
-		enemy_los.SetSightDistance(sightDistance);
+		elos = gameObject.GetComponentInChildren<EnemyLineOfSight>();
+		elos.SetDegreeOfSight(degreeOfSight);
+		elos.SetSightDistance(sightDistance);
 	}
 }
