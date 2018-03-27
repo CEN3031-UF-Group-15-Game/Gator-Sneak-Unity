@@ -1,15 +1,10 @@
 fileFormatVersion: 2
-guid: fa832e9af57b23341926eeec031388e1
+guid: 11e09194c28364292a7b3e0c789c727a
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
     4300000: twig
-    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
