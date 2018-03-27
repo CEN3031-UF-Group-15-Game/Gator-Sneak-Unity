@@ -7,26 +7,14 @@ public class GameControl : MonoBehaviour
 {
     //Public Constants and Variables
     public const int LOADINGSCENE = 0;
-
+    public string startScene = "start";
     //Private Variables
     private static bool isAwake = false;
     private bool isCurScnEditable = true;
     private bool loadScn = false;
-
     private string currentScene, prevScene;
 
-    public string GetCurrentScene()
-    {
-        return currentScene;
-    }
-
-    public void SetCurrentScene(string value)
-    {
-        if(isCurScnEditable)
-            currentScene = value;
-        loadScn = true;
-    }
-
+    private GameObject winBox;
 
     //Awake is call 0
     private void Awake()
@@ -84,7 +72,7 @@ public class GameControl : MonoBehaviour
         currentScene = SceneManager.GetActiveScene().name;
 
         //Goto Start
-        SceneManager.LoadScene("start");
+        SceneManager.LoadScene(startScene);
     }
 
     /*FixedUpdate is call 4
