@@ -1,15 +1,10 @@
 fileFormatVersion: 2
-guid: 1e5af1fe52de2a745af138f50151c31b
+guid: 4fdaa58b576854f22b8545571de2d835
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
     4300000: Polygon
-    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
