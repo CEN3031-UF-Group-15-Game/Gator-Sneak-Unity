@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class EnemyLineOfSight : MonoBehaviour {
 
-	public Transform playerTransform;
-	public float degreeOfSight;
-	public float sightDistance;
+	private Transform playerTransform;
+	private float degreeOfSight;
+	private float sightDistance;
+	/** 
+		Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
+		access the variable bool playerIsSeen. I update it here so we don't need to perform the 
+		line of sight calculations more than necessary.
+	*/
+
+	private MoveToPlayer moveToPlayerComponent; 	
+	void Start() {
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+		moveToPlayerComponent = GetComponent<MoveToPlayer> ();
+	}
 
 	bool PlayerIsSeenByEnemy() {
 		
@@ -23,13 +34,13 @@ public class EnemyLineOfSight : MonoBehaviour {
 				Vector3 vecNegative = angleNegative * transform.forward;
 
 				if(Physics.Raycast(transform.position, vecPositive, out hitPositive, sightDistance)) {
-					if(hitPositive.collider.gameObject.name == "ThirdPersonController") {
+					if(hitPositive.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
 						return true;
 					}
 				}
 
 				if(Physics.Raycast(transform.position, vecNegative, out hitNegative, sightDistance)) {
-					if(hitNegative.collider.gameObject.name == "ThirdPersonController") {
+					if(hitNegative.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
 						return true;
 					}
 				}
@@ -40,12 +51,19 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 	void FixedUpdate() {
 		if(PlayerIsSeenByEnemy()) {
+			moveToPlayerComponent.SetPlayerIsSeen(true);	
 			Debug.Log ("Seen!");
 		}
 		else {
+			moveToPlayerComponent.SetPlayerIsSeen(false);
 			Debug.Log ("Not seen.");
 		}
+	}
 
-
+	public void SetDegreeOfSight(int dos) {
+		degreeOfSight = dos;
+	}
+	public void SetSightDistance(int sd) {
+		sightDistance = sd;
 	}
 }
