@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
+using UnityEditor;
 
 public class GameControl : MonoBehaviour
 {
@@ -14,7 +16,13 @@ public class GameControl : MonoBehaviour
     private bool loadScn = false;
     private string currentScene, prevScene;
 
+
     private GameObject winBox;
+
+    public int playerStealth = 1;
+    public bool gameWin = false;
+    private int level = 0;
+
 
     //Awake is call 0
     private void Awake()
@@ -59,6 +67,13 @@ public class GameControl : MonoBehaviour
                  * Put SetUp Code Here
                  */
                 break;
+            case "DemoTurlington":
+                Debug.Log("GameControl is in DemoScene 0\n");
+                playerStealth = 1 + level;
+                /*
+                 * Put SetUp Code Here
+                 */
+                break;
             default:
                 //Do Nothing.
                 break;
@@ -98,9 +113,41 @@ public class GameControl : MonoBehaviour
             case "start":
                 Debug.Log("In Start");
                 break;
+            case "DemoTurlington":
+                /*
+                 * Put Level Code Here
+                 */
+                if(gameWin)
+                {
+                    Debug.Log("You Win");
+                    gameWin = false;
+                    SceneManager.LoadScene("DemoTurlington");
+                    ++level;
+                    updateSaveFile();
+
+
+                }
+                break;
             default:
                 Debug.Log("Unknown Scene");
                 break;
         }
+    }
+
+    private void updateSaveFile()
+    {
+        string path = "Assets/SaveData/Save.txt";
+
+        //Write some text to the test.txt file
+        StreamWriter writer = new StreamWriter(path, true);
+        writer.WriteLine("Level: " + level);
+        writer.Close();
+
+        //Re-import the file to update the reference in the editor
+     //   AssetDatabase.ImportAsset(path);
+     //   TextAsset asset = Resources.Load("save.txt");
+
+        //Print the text from the file
+      //  Debug.Log(asset.text);
     }
 }
