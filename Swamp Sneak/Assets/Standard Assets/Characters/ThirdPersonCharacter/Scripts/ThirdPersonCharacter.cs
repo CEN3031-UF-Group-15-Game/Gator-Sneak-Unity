@@ -231,7 +231,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		private void UpdateStatus(string message)
 		{
-			Debug.Log(message);
+			//Debug.Log(message);
 			if (stealthText != null)
 			{
 				stealthText.text = message;
