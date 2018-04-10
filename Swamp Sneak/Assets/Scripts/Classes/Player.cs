@@ -43,19 +43,51 @@ public class Player : Person {
 		}
 	}
 
+	// Stealth Functions
+	// -----------------------------------------------
 	public int getStealth() {
 		return player_stats.stealth;
 	}
 
+	public void setStealth(int new_stealth) {
+		player_stats.stealth = new_stealth;
+	}
+
+	public void incrementStealth(int amount) {
+		player_stats.stealth += amount;
+	}
+
+	// Level Functions
+	// -----------------------------------------------
 	public int getLevel() {
 		return player_stats.level;
 	}
 
+	public void incrementLevel(int amount) {
+		player_stats.level += amount;
+	}
+
+	public void setLevel(int new_level) {
+		player_stats.level = new_level;
+	}
+
+	// Experience Functions
+	// -----------------------------------------------
 	public int getExperience() {
 		return player_stats.experience;
 	}
 
+	public void incrementExperience(int amount) {
+		player_stats.experience += amount;
+	}
+
+	public void setExperience(int new_experience) {
+		player_stats.experience = new_experience;
+	}
+
+
 	// Container class to hold player stats
+	// -----------------------------------------------
 	public class Stats {
 		public int level;
 		public int experience;
