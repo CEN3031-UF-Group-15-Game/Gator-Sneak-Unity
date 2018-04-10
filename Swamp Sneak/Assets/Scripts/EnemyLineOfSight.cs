@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class EnemyLineOfSight : MonoBehaviour {
 
@@ -35,13 +36,17 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 				if(Physics.Raycast(transform.position, vecPositive, out hitPositive, sightDistance)) {
 					if(hitPositive.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						return true;
+						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
+							return true;
+						}
 					}
 				}
 
 				if(Physics.Raycast(transform.position, vecNegative, out hitNegative, sightDistance)) {
 					if(hitNegative.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						return true;
+						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
+							return true;
+						}
 					}
 				}
 			}
