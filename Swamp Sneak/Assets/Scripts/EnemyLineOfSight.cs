@@ -6,12 +6,15 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class EnemyLineOfSight : MonoBehaviour {
 
 	private Transform playerTransform;
-	public float degreeOfSight;
-	public float sightDistance;
-	private MoveToPlayer moveToPlayerComponent; 	// Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
-													// access the variable bool playerIsSeen. I update it here so we don't need to perform the 
-													// line of sight calculations more than necessary.
+	private float degreeOfSight;
+	private float sightDistance;
+	/** 
+		Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
+		access the variable bool playerIsSeen. I update it here so we don't need to perform the 
+		line of sight calculations more than necessary.
+	*/
 
+	private MoveToPlayer moveToPlayerComponent; 	
 	void Start() {
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		moveToPlayerComponent = GetComponent<MoveToPlayer> ();
@@ -53,14 +56,19 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 	void FixedUpdate() {
 		if(PlayerIsSeenByEnemy()) {
-			moveToPlayerComponent.playerIsSeen = true;	
+			moveToPlayerComponent.SetPlayerIsSeen(true);	
 			Debug.Log ("Seen!");
 		}
 		else {
-			moveToPlayerComponent.playerIsSeen = false;
+			moveToPlayerComponent.SetPlayerIsSeen(false);
 			Debug.Log ("Not seen.");
 		}
+	}
 
-
+	public void SetDegreeOfSight(int dos) {
+		degreeOfSight = dos;
+	}
+	public void SetSightDistance(int sd) {
+		sightDistance = sd;
 	}
 }
