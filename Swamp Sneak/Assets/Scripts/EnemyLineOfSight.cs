@@ -33,7 +33,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 				if(Physics.Raycast(transform.position, vecPositive, out hitPositive, sightDistance)) {
 					if(hitPositive.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().m_Crouching == false) {
+						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
 							return true;
 						}
 					}
@@ -41,7 +41,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 				if(Physics.Raycast(transform.position, vecNegative, out hitNegative, sightDistance)) {
 					if(hitNegative.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().m_Crouching == false) {
+						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
 							return true;
 						}
 					}

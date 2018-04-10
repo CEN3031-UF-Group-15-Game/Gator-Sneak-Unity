@@ -28,8 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		float m_CapsuleHeight;
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
-		public bool m_Crouching = false;
-        public Text stealthText;
+		bool m_Crouching = false;
 
 
 		void Start()
@@ -42,7 +41,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
-            UpdateStatus("Stealth: " + m_Crouching.ToString());
 		}
 
 
@@ -87,7 +85,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Capsule.height = m_Capsule.height / 2f;
 				m_Capsule.center = m_Capsule.center / 2f;
 				m_Crouching = true;
-                UpdateStatus("Stealth: " + m_Crouching.ToString());
             }
             else
 			{
@@ -96,13 +93,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-                    UpdateStatus("Stealth: " + m_Crouching.ToString());
                     return;
 				}
 				m_Capsule.height = m_CapsuleHeight;
 				m_Capsule.center = m_CapsuleCenter;
 				m_Crouching = false;
-                UpdateStatus("Stealth: " + m_Crouching.ToString());
             }
         }
 
@@ -116,7 +111,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
-                    UpdateStatus("Stealth: " + m_Crouching.ToString());
                 }
             }
 		}
@@ -228,14 +222,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
-
-		private void UpdateStatus(string message)
+		
+		public bool getStealth()
 		{
-			Debug.Log(message);
-			if (stealthText != null)
-			{
-				stealthText.text = message;
-			}
+			return m_Crouching;
 		}
+		
 	}
 }
