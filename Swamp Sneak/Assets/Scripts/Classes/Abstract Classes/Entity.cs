@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour {
 
+	protected GameControl control;
+
     protected virtual void Awake() {
         Init();
     }

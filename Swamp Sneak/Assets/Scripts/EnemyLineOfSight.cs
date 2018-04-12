@@ -57,11 +57,11 @@ public class EnemyLineOfSight : MonoBehaviour {
 	void FixedUpdate() {
 		if(PlayerIsSeenByEnemy()) {
 			moveToPlayerComponent.SetPlayerIsSeen(true);	
-			Debug.Log ("Seen!");
+			//Debug.Log ("Seen!");
 		}
 		else {
 			moveToPlayerComponent.SetPlayerIsSeen(false);
-			Debug.Log ("Not seen.");
+			//Debug.Log ("Not seen.");
 		}
 	}
 
