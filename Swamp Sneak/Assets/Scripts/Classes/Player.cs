@@ -29,62 +29,60 @@ public class Player : Person {
 		// If it does exist, the save file will be loaded and stored to a PersistentData
 		// object in GameControl's Awake function.
 		if (control.persistent_save_data == null) {
-			player_stats = new Stats ();
-			player_stats.level = 1;
-			player_stats.experience = 0;
-			player_stats.stealth = 1;
+			level = 1;
+			experience = 0;
+			stealth = 1;
 
 		}
 		// Otherwise, use the persistent save data
 		else {
 			// Initialize player_stats
-			player_stats = new Stats ();
-			player_stats.level = control.persistent_save_data.player_level;
-			player_stats.experience = control.persistent_save_data.player_experience;
-			player_stats.stealth = control.persistent_save_data.player_stealth;
+			level = control.persistent_save_data.player_level;
+			experience = control.persistent_save_data.player_experience;
+			stealth = control.persistent_save_data.player_stealth;
 		}
 	}
 
 	// Stealth Functions
 	// -----------------------------------------------
 	public int getStealth() {
-		return player_stats.stealth;
+		return stealth;
 	}
 
 	public void setStealth(int new_stealth) {
-		player_stats.stealth = new_stealth;
+		stealth = new_stealth;
 	}
 
 	public void incrementStealth(int amount) {
-		player_stats.stealth += amount;
+		stealth += amount;
 	}
 
 	// Level Functions
 	// -----------------------------------------------
 	public int getLevel() {
-		return player_stats.level;
+		return level;
 	}
 
 	public void incrementLevel(int amount) {
-		player_stats.level += amount;
+		level += amount;
 	}
 
 	public void setLevel(int new_level) {
-		player_stats.level = new_level;
+		level = new_level;
 	}
 
 	// Experience Functions
 	// -----------------------------------------------
 	public int getExperience() {
-		return player_stats.experience;
+		return experience;
 	}
 
 	public void incrementExperience(int amount) {
-		player_stats.experience += amount;
+		experience += amount;
 	}
 
 	public void setExperience(int new_experience) {
-		player_stats.experience = new_experience;
+		experience = new_experience;
 	}
 
 }
