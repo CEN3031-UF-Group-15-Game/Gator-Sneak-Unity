@@ -4,8 +4,10 @@ using UnityEngine;
 
 
 public class Player : Person {
-	private GameControl control;
-	private Stats player_stats;
+	
+	private int level;
+	private int experience;
+	private int stealth;
 
 	/* From documentation: 
 	 * "Each GameObject's Awake is called in a random order between objects. Because of this, 
@@ -83,15 +85,6 @@ public class Player : Person {
 
 	public void setExperience(int new_experience) {
 		player_stats.experience = new_experience;
-	}
-
-
-	// Container class to hold player stats
-	// -----------------------------------------------
-	public class Stats {
-		public int level;
-		public int experience;
-		public int stealth;
 	}
 
 }
