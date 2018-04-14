@@ -36,7 +36,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 				if(Physics.Raycast(transform.position, vecPositive, out hitPositive, sightDistance)) {
 					if(hitPositive.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
+						if (stealthCheck()) {
 							return true;
 						}
 					}
@@ -44,7 +44,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 
 				if(Physics.Raycast(transform.position, vecNegative, out hitNegative, sightDistance)) {
 					if(hitNegative.collider.gameObject.name == playerTransform.GetComponentInChildren<Collider>().gameObject.name) {
-						if (GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false) {
+						if (stealthCheck()) {
 							return true;
 						}
 					}
@@ -70,5 +70,28 @@ public class EnemyLineOfSight : MonoBehaviour {
 	}
 	public void SetSightDistance(int sd) {
 		sightDistance = sd;
+	}
+	
+	bool stealthCheck()
+	{
+
+		//Function to check if player is stealthed and also handle RNG factor
+		if(GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false)
+		{
+			return true;
+		}
+		
+		int chance = Random.Range(1,9);
+		print(chance);
+		
+		if (GameObject.Find("GameControl").GetComponent<GameControl>().playerStealth < chance)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
 	}
 }
