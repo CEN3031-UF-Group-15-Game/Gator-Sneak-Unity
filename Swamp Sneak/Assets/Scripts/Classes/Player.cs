@@ -31,7 +31,7 @@ public class Player : Person {
 		if (control.persistent_save_data == null) {
 			level = 1;
 			experience = 0;
-			stealth = 1;
+			stealth = 5;
 
 		}
 		// Otherwise, use the persistent save data

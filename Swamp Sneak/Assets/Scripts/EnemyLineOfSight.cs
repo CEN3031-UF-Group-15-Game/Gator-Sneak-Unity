@@ -84,7 +84,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 		int chance = Random.Range(1,9);
 		print(chance);
 		
-		if (GameObject.Find("GameControl").GetComponent<GameControl>().playerStealth < chance)
+		if (GameObject.Find("Player").GetComponent<Player>().getStealth() < chance)
 		{
 			return true;
 		}
