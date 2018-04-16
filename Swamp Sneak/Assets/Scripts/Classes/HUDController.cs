@@ -11,7 +11,7 @@ public class HUDController : MonoBehaviour {
     private Canvas CanvasObject;
 	private Text ScoreText;
 	private Text TimerText;
-	private Text GamemodeText;
+	//private Text GamemodeText;
 
 	public void updateScoreValue(int score) {
 		ScoreText.text = score.ToString();
@@ -22,7 +22,7 @@ public class HUDController : MonoBehaviour {
 		updateTimerValue(min.ToString() + ":" + sec.ToString("00"));
 	}
 	public void updateGamemodeString(string gamemodeStr) {
-		GamemodeText.text = gamemodeStr;
+		//GamemodeText.text = gamemodeStr;
 	}
 
 	// Will set the timer value to (time) exactly
@@ -46,7 +46,7 @@ public class HUDController : MonoBehaviour {
         CanvasObject = GetComponent<Canvas>();
 		ScoreText = GameObject.Find("Score Value").GetComponent<Text>();
 		TimerText = GameObject.Find("Timer Value").GetComponent<Text>();
-		GamemodeText = GameObject.Find("Gamemode").GetComponent<Text>();
+		//GamemodeText = GameObject.Find("Gamemode").GetComponent<Text>();
 	}
 
 	// Use this for initialization
