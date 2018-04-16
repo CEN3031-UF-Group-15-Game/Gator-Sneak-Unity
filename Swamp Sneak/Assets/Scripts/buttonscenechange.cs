@@ -34,7 +34,8 @@ public class buttonscenechange : MonoBehaviour {
 		string save_file_path = EditorUtility.SaveFilePanel ("Save Game", Application.dataPath + "/SaveData", save_file_default_name, "dat");
 		if (save_file_path != null) {
 			control.CreateSave (save_file_path);
-			Application.LoadLevel ("Scenes/Sprint-3-Demo");
+			//Application.LoadLevel ("Scenes/Sprint-3-Demo");
+			Application.LoadLevel ("Scenes/instructions");
 		}
 
 	}
@@ -58,4 +59,8 @@ public class buttonscenechange : MonoBehaviour {
 
 	}
 
+	public void ClickToPlayButtonPress()
+	{
+		Application.LoadLevel ("Scenes/Sprint-3-Demo");
+	}
 }
