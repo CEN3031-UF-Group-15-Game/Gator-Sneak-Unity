@@ -4,6 +4,7 @@ using System.Collections;
 
 public class MoveToPlayer : MonoBehaviour {
 
+	public bool noBrakes = false; // If true, the enemy will never stop
 	private Transform playerTransform;	// The player character that the enemy will be chasing
 	private float lastTimeOfUpdate;		// The last time the player character's position was updated, measured in seconds since the start of the game
 	private float timeInterval;			// The minimum time in seconds required to elapse before the goalPosition will update
@@ -30,6 +31,7 @@ public class MoveToPlayer : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
+		if (noBrakes) return;
 		// If the object being collided with is the player character...
 		if (collision.gameObject.GetInstanceID() == playerTransform.GetComponent<Collider>().gameObject.GetInstanceID()) {
 			collidedWithPlayer = true;
