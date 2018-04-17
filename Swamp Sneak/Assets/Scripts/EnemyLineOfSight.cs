@@ -9,7 +9,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 	private GameObject playerGameObject;
 	private float degreeOfSight;
 	private float sightDistance;
-	private int stealthCheckDelay = 2; // Wait 2 seconds before running another stealth check
+	private float stealthCheckDelay = 0.5F; // Wait before running another stealth check
 	private float lastStealthCheck;
 	private MoveToPlayer moveToPlayerComponent; 
 	/** 
@@ -96,8 +96,6 @@ public class EnemyLineOfSight : MonoBehaviour {
 			lastStealthCheck = Time.time;
 			int chance = Random.Range(1,9);
 			int playerStealthStat = playerGameObject.GetComponent<Player> ().getStealthStat ();
-			Debug.Log ("Stealth chance = " + chance);
-			Debug.Log ("Player stealth stat = " + playerStealthStat);
 
 			if (playerStealthStat < chance) {
 				return true;
