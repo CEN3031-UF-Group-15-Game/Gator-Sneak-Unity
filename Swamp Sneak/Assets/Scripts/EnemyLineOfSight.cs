@@ -6,18 +6,24 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class EnemyLineOfSight : MonoBehaviour {
 
 	private Transform playerTransform;
+	private GameObject playerGameObject;
 	private float degreeOfSight;
 	private float sightDistance;
+	private float stealthCheckDelay = 0.5F; // Wait before running another stealth check
+	private float lastStealthCheck;
+	private MoveToPlayer moveToPlayerComponent; 
 	/** 
 		Variable for enemy movement component (defined in MoveToPlayer.cs), so we can 
 		access the variable bool playerIsSeen. I update it here so we don't need to perform the 
 		line of sight calculations more than necessary.
 	*/
 
-	private MoveToPlayer moveToPlayerComponent; 	
-	void Start() {
+		
+	void Awake() {
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-		moveToPlayerComponent = GetComponent<MoveToPlayer> ();
+		playerGameObject = GameObject.FindGameObjectWithTag ("Player");
+		moveToPlayerComponent = GameObject.FindGameObjectWithTag ("Enemy").GetComponentInChildren<MoveToPlayer> ();
+		lastStealthCheck = 0;
 	}
 
 	bool PlayerIsSeenByEnemy() {
@@ -71,27 +77,34 @@ public class EnemyLineOfSight : MonoBehaviour {
 	public void SetSightDistance(int sd) {
 		sightDistance = sd;
 	}
-	
+
+	//Function to check if player is stealthed and also handle RNG factor
 	bool stealthCheck()
 	{
+		if (playerGameObject == null) {
+			playerGameObject = GameObject.FindGameObjectWithTag ("Player");
+		}
 
-		//Function to check if player is stealthed and also handle RNG factor
-		if(GameObject.Find("Player").GetComponent<ThirdPersonCharacter>().getStealth() == false)
+		// If player is not crouching...
+		if(playerGameObject.GetComponent<ThirdPersonCharacter>().getStealth() == false)
 		{
 			return true;
 		}
-		
-		int chance = Random.Range(1,9);
-		print(chance);
-		
-		if (GameObject.Find("Player").GetComponent<Player>().getStealth() < chance)
-		{
-			return true;
+
+		// If enough time has passed, do a stealth check
+		if ((Time.time - lastStealthCheck) >= stealthCheckDelay) {
+			lastStealthCheck = Time.time;
+			int chance = Random.Range(1,9);
+			int playerStealthStat = playerGameObject.GetComponent<Player> ().getStealthStat ();
+
+			if (playerStealthStat < chance) {
+				return true;
+			} 
+			else {
+				return false;
+			}
 		}
-		else
-		{
-			return false;
-		}
-		
+
+		return false;
 	}
 }

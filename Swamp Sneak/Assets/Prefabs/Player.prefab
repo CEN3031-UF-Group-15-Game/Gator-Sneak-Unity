@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 20755296797286346}
   - component: {fileID: 124393079172422456}
   - component: {fileID: 81240848449439868}
+  - component: {fileID: 114656889780657700}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -672,9 +673,9 @@ GameObject:
   - component: {fileID: 95764260422340568}
   - component: {fileID: 54354700802608450}
   - component: {fileID: 136969833416219134}
-  - component: {fileID: 114740587706144140}
   - component: {fileID: 114975780077280694}
   - component: {fileID: 114392015889988418}
+  - component: {fileID: 114765647250626596}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1477,7 +1478,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1566385656117126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -6.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4309767776305022}
@@ -2769,7 +2770,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60025711f33b58a44bffa299c36e1000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114740587706144140
+--- !u!114 &114656889780657700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1152214858173346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7768beb1b0226b1489e1543e9492fa01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114765647250626596
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2777,7 +2789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566385656117126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d19147452246934ebf9de868cdd4f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114975780077280694
@@ -2799,7 +2811,6 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
-  stealthText: {fileID: 0}
 --- !u!124 &124393079172422456
 Behaviour:
   m_ObjectHideFlags: 1
