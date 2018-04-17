@@ -22,7 +22,7 @@ public class EnemyLineOfSight : MonoBehaviour {
 	void Awake() {
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		playerGameObject = GameObject.FindGameObjectWithTag ("Player");
-		moveToPlayerComponent = GameObject.FindGameObjectWithTag ("Enemy").GetComponentInChildren<MoveToPlayer> ();
+		moveToPlayerComponent = gameObject.GetComponent<MoveToPlayer> ();
 		lastStealthCheck = 0;
 	}
 

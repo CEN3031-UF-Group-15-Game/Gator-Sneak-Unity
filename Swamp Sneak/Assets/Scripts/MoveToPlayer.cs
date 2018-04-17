@@ -41,7 +41,13 @@ public class MoveToPlayer : MonoBehaviour {
 	void Update() {
 		if (canUpdatePosition() && playerIsSeen) {
 			// Set the destination to the same position as the game object that the collider is attached to (usually the thing that is changing position!)
-			enemy.SetDestination (playerTransform.GetComponentInChildren<Collider>().gameObject.GetComponent<Transform>().position);
+			enemy.SetDestination (playerTransform.position);
+		}
+
+		// Load "Game Over" screen
+		if (collidedWithPlayer == true) {
+			// Alex: move this block to a better place later... in GameControl.cs?
+			Application.LoadLevel("Scenes/end");
 		}
 
 	}

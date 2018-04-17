@@ -12,7 +12,19 @@ public class buttonscenechange : MonoBehaviour {
 	void Awake() 
 	{
 		// Get a reference to the GameControl object
-		control = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
+		try {
+			control = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
+		}
+		catch {}
+	}
+
+	void Update() {
+		if (control == null) {
+			try {
+				control = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
+			}
+			catch {}
+		}
 	}
 
 	public void MainGameChange()
@@ -25,7 +37,7 @@ public class buttonscenechange : MonoBehaviour {
 	}
 	public void Level1GameChange()
 	{
-		Application.LoadLevel("Scenes/DEMO SCENE");
+		Application.LoadLevel("Scenes/Sprint-3-Demo");
 	}
 
 	public void NewGameButtonPress() 
