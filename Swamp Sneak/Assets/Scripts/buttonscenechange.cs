@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class buttonscenechange : MonoBehaviour {
 
 	public void MainGameChange()
 	{
-		Application.LoadLevel("Start");
+		SceneManager.LoadScene("Start");
 	}
 	public void HighScoreGameChange()
 	{
-		Application.LoadLevel("highscore");
+        SceneManager.LoadScene("highscore");
 	}
 	public void Level1GameChange()
 	{
-		Application.LoadLevel("Scenes/DEMO SCENE");
+        SceneManager.LoadScene("Scenes/DEMO SCENE");
 	}
 }
